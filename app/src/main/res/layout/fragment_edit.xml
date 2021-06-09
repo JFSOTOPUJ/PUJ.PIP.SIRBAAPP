@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Editar Registro"
+            android:textColor="@color/bluegrey"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Seleccione los datos que desea editar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/ic_frutas"
+            app:layout_constraintBottom_toBottomOf="@+id/KGFTextInputLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/KGFTextInputLayout"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/KGFTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:hint="Fruver"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="@+id/imageView15">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/kilosFruverTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_saco_de_trigo"
+            app:layout_constraintEnd_toStartOf="@+id/KGGTextInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/KGGTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="32dp"
+            android:hint="Granos"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView15">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/kilosGranosTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/ic_estar"
+            app:layout_constraintBottom_toBottomOf="@+id/KGATextInputLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/KGATextInputLayout"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/KGATextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:hint="Abarrotes"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewL"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="@+id/imageViewL">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/kilosAbarrotesTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageViewL"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_productos_lacteos"
+            app:layout_constraintEnd_toStartOf="@+id/KGGTextInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/KGLTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="32dp"
+            android:hint="Lácteos"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewL">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/kilosLacteosTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ImageView
+            android:id="@+id/imageViewC"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/ic_carne"
+            app:layout_constraintBottom_toBottomOf="@+id/KGCTextInputLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/KGCTextInputLayout"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/KGCTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:hint="Carnes"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewP"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="@+id/imageViewP">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/kilosCarnesTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageViewP"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_panaderia"
+            app:layout_constraintEnd_toStartOf="@+id/KGGTextInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewL" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/KGPTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="32dp"
+            android:hint="Panadería"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewP">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/kilosPanaderiaTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ImageView
+            android:id="@+id/imageViewB"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/ic_bebidas"
+            app:layout_constraintBottom_toBottomOf="@+id/KGBTextInputLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/KGBTextInputLayout"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/KGBTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:hint="Bebidas"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewAS"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="@+id/imageViewAS">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/kilosBebidasTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageViewAS"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_champu"
+            app:layout_constraintEnd_toStartOf="@+id/KGGTextInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewP" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/KGASTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="32dp"
+            android:hint="Aseo"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewAS"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewAS">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/kilosAseoTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ImageView
+            android:id="@+id/imageViewR"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/ic_moda"
+            app:layout_constraintBottom_toBottomOf="@+id/KGRTextInputLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/KGRTextInputLayout"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/KGRTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:hint="Ropa"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewO"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="@+id/imageViewO">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/kilosRopaTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageViewO"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_elipsis"
+            app:layout_constraintEnd_toStartOf="@+id/KGGTextInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewAS" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/KGOTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="32dp"
+            android:hint="Otros"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewO">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/kilosOtrosTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/editButton"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@color/brown"
+            android:text="Confirmar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="16sp"
+            app:cornerRadius="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewO" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

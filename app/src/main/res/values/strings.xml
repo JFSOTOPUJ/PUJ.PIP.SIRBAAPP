@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Sirba app</string>
+    <!--AddRegisterFragment-->
+    <string-array name="tipos_de_donaciones">
+        <item>FRUVER</item>
+        <item>ASEO</item>
+        <item>PANADERIA</item>
+        <item>LACTEOS</item>
+    </string-array>
+
+
+    <string-array name="tipos_de_documentos">
+        <item>Cédula de Ciudadanía</item>
+        <item>Targeta de Identidad</item>
+        <item>Cédula de Extrangería</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
